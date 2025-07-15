@@ -1,0 +1,52 @@
+altgraph @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/altgraph-0.17.2-py2.py3-none-any.whl
+attrs==25.3.0
+beautifulsoup4==4.13.4
+cachetools==5.5.2
+certifi==2025.6.15
+charset-normalizer==3.4.2
+exceptiongroup==1.3.0
+filelock==3.18.0
+fsspec==2025.5.1
+future @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/future-0.18.2-py3-none-any.whl
+google-auth==2.40.3
+google-auth-oauthlib==1.2.2
+gspread==6.2.1
+h11==0.16.0
+httplib2==0.22.0
+idna==3.10
+Jinja2==3.1.6
+llvmlite==0.43.0
+macholib @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
+MarkupSafe==3.0.2
+more-itertools==10.7.0
+mpmath==1.3.0
+networkx==3.2.1
+numba==0.60.0
+numpy==2.0.2
+oauth2client==4.1.3
+oauthlib==3.3.1
+openai-whisper==20240930
+outcome==1.3.0.post0
+pyasn1==0.6.1
+pyasn1_modules==0.4.2
+pyparsing==3.2.3
+PySocks==1.7.1
+regex==2024.11.6
+requests==2.32.4
+requests-oauthlib==2.0.0
+rsa==4.9.1
+selenium==4.34.2
+six @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/six-1.15.0-py2.py3-none-any.whl
+sniffio==1.3.1
+sortedcontainers==2.4.0
+soupsieve==2.7
+sympy==1.14.0
+tiktoken==0.9.0
+torch==2.7.1
+tqdm==4.67.1
+trio==0.30.0
+trio-websocket==0.12.2
+typing_extensions==4.14.0
+urllib3==2.5.0
+websocket-client==1.8.0
+wsproto==1.2.0
