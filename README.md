@@ -4,26 +4,63 @@ This repository contains automation scripts developed for streamlining repetitiv
 
 ## 🚀 Current Projects
 
-### 1. Keap Note Appender
+### 🗂️ Script 1: Keap CRM Note Appender
 
-Automates the process of appending notes to contact records in Keap CRM using data from a connected Google Sheet.
+This script appends notes from a Google Sheet into Keap CRM contact records.
 
-**Features:**
-- Opens the contact profile URL from the spreadsheet
-- Adds a predefined or dynamic note
-- Optionally waits for manual login if session isn't saved
-- Clicks "Save" to confirm the note
-- Moves on to the next record
+#### 📄 File:
+- `append_keap_notes.py`
+
+#### ✅ What it does:
+- Opens each contact record by ID
+- Navigates to the Person Notes tab
+- Appends new notes from the sheet without overwriting existing data
+- Saves the record before moving to the next one
+
+#### 🧪 Example Run:
+```bash
+python3 append_keap_notes.py
+```
+
+#### 📦 Dependencies:
+Install with:
+```bash
+pip3 install -r requirements.txt
+```
 
 ---
 
-### 2. Google Sheet Scraper
+### 🗂️ Script 2: Property Auctions Center Scraper
 
-Automates the process of scraping structured data from a website and updating a Google Sheet.
+This script logs into [PropertyAuctionsCenter.com](https://propertyauctionscenter.com) and scrapes data into a Google Sheet.
 
-**Features:**
-- Uses Selenium to launch a headless Chrome session
-- Navigates to the target website and extracts relevant information
-- Authenticates and updates a connected Google Sheet
-- Can be triggered manually or scheduled via macOS Automator / `launchd`
-- Sends desktop and voice notifications when done
+#### 📄 File:
+- `scrape_to_sheet.py`
+
+#### ✅ What it does:
+- Logs in using credentials stored in `.env`
+- Extracts auction table data
+- Appends it to a specified Google Sheet
+
+#### ⚙️ .env format:
+```
+USERNAME=your_email@example.com
+PASSWORD=your_password
+LOGIN_URL=https://propertyauctionscenter.com/users/sign_in
+GOOGLE_SHEET_NAME=Propertyauctionscenter_table
+GOOGLE_CREDENTIALS_FILE=google-credentials.json
+```
+
+> 🔒 **Note:** `.env` and `google-credentials.json` are excluded via `.gitignore`.
+
+#### 🧪 Example Run:
+```bash
+python3 scrape_to_sheet.py
+```
+
+#### 📦 Dependencies:
+Same as in `requirements.txt`. Install with:
+```bash
+pip3 install -r requirements.txt
+```
+
