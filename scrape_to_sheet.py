@@ -7,16 +7,24 @@ from selenium.webdriver.support import expected_conditions as EC
 import gspread
 from gspread.utils import rowcol_to_a1
 from google.oauth2.service_account import Credentials
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+USERNAME = os.getenv("USERNAME")
+PASSWORD = os.getenv("PASSWORD")
+LOGIN_URL = os.getenv("LOGIN_URL")
+GOOGLE_SHEET_NAME = os.getenv("GOOGLE_SHEET_NAME")
+GOOGLE_CREDENTIALS_FILE = os.getenv("GOOGLE_CREDENTIALS_FILE")
+
+
 import time
 
 # ===============================
 # 🔐 CONFIGURATION SECTION
 # ===============================
-USERNAME = "jeff@tedthomas.com"
-PASSWORD = "anf9xcy@wxb4XFZ1hwk"
-LOGIN_URL = "https://propertyauctionscenter.com/users/sign_in"
-GOOGLE_SHEET_NAME = "Propertyauctionscenter_table"
-GOOGLE_CREDENTIALS_FILE = "google-credentials.json"
+
 
 # ===============================
 # 📊 GOOGLE SHEET CONNECTION
